@@ -261,19 +261,16 @@ ul#nav li.current a { color: #F06000; }
    padding-top: 10px;
 }
 
-#blog .blog-pic {
-   position: relative;
-   width: 230px;
-   height: 230px;
-   border-radius: 5%;
-}
-
 #blog .header-col { 
    padding-top: 40px;
    padding-bottom: 30px;
    padding-right: 10%; 
 }
 #blog .main-col { padding-right: 10%; }
+
+#blog .main-row {
+   padding-bottom: 30px;
+}
 
 .post{
    margin-bottom: 00px;
@@ -322,8 +319,16 @@ ul#nav li.current a { color: #F06000; }
    font: 25px/30px 'opensans-bold', sans-serif;
 }
 
-#projects .header-col { padding-top: 9px; }
+#projects .header-col { 
+   padding-top: 40px;
+   padding-bottom: 30px;
+   padding-right: 10%; 
+}
 #projects .main-col { padding-right: 10%; }
+
+#projects .main-row {
+   padding-bottom: 30px;
+}
 
 .single_project {
    margin-bottom: 48px;
