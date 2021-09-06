@@ -197,21 +197,17 @@
       <!-- Post
          =================================== -->
       <div class="row post">
-
-         <div class="three columns header-col">
-            <h1><span>Blog</span></h1>
+         <div class="row item">
+            <div class="three columns header-col">
+               <h1><span>Blog</span></h1>
+            </div>
          </div>
 
-         <div class="three columns">
-            <img class="containers-pic" src="images/kubelet_to_kernel.png" alt="Yash Profile Pic" />
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
+         <div class="row item">
+            <div class="three columns">
+               <img class="blog-pic" src="images/kubelet_to_kernel.png" alt="kubelet_to_kernel"/>
+            </div>
+            <div class="nine columns main-col">
                   <h3><i class="fa fa-blog"></i>
                      <a href="https://yashjakhotiya.github.io/blog/containers/kubernetes/2020/12/20/container-runtimes.html">
                         Containers, Container Runtimes, and What Kubernetes 'Docker' Deprecation Really Means
@@ -221,7 +217,14 @@
                      Kubelet to kernel space, and everything in between <span>&bull;</span> <em class="date">Dec 20,
                         2020</em>
                   </p>
+            </div>
+         </div>
 
+         <div class="row item">
+            <div class="three columns">
+               <img class="blog-pic" src="images/kubeflow_logo.png" alt="kubeflow_logo"/>
+            </div>
+            <div class="nine columns main-col">
                   <h3><i class="fa fa-blog"></i>
                      <a href="https://yashjakhotiya.github.io/blog/open-source/mlops/2020/08/23/gsoc-kubeflow.html">
                         GSoC '20: Kubeflow Customer User Journey Notebooks with Tensorflow 2.x Keras
@@ -231,15 +234,9 @@
                      An important milestone in my journey of open source <span>&bull;</span> <em class="date">Aug 23,
                         2020</em>
                   </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Post -->
-
+            </div>
+         </div> <!-- item end -->
+      </div> <!-- row post end -->
    </section> <!-- Blog Section End-->
 
    <!-- Projects Section
@@ -249,100 +246,171 @@
       <!-- Single Project
 		  =========================================== -->
       <div class="row single_project">
-
-         <div class="three columns header-col">
-            <h1><span>Projects</span></h1>
+         <div class="row item">
+            <div class="three columns header-col">
+               <h1><span>Projects</span></h1>
+            </div>
          </div>
 
-         <div class="nine columns main-col">
+         <div class="row item">
+            <div class="three columns">
+               <img class="blog-pic" src="images/transformer-malware-detector.png" alt="transformer-malware-detector"/>
+            </div>
+            <div class="nine columns main-col">
+               <p><i class="fa fa-project-diagram"></i>
+                  <a
+                     href="https://github.com/yashjakhotiya/Adversarial-Attacks-On-Transformers">
+                     <b style="color:#11ABB0;">Adversarial Attacks On Transformers-Based Malware Detector</b>.
+                  </a>
+                  &bull;
+                  <em class="date">
+                     Sep 2019 - May 2020
+                  </em>
+                  <br>
+                  A state-of-the-art Transformer-based Malware Detector has been implemented here. 
+                  Additionally, this malware detector's vulnerabilities to adversarial attacks have been explored,
+                     and defenses to these attacks have been suggested.
+               </p>
+            </div>
+         </div>
 
-            <div class="row item">
+         <div class="row item">
+            <div class="three columns">
+               <img class="blog-pic" src="images/ucsd_anomaly_example.png" alt="ucsd_anomaly_example"/>
+            </div>
+            <div class="nine columns main-col">
+               <p><i class="fa fa-project-diagram"></i>
+                  <a href="https://github.com/yashjakhotiya/Anomaly-Detection">
+                     <b style="color:#11ABB0;">Anomaly Detection in a Supervised Way</b>.
+                  </a>
+                  &bull;
+                  <em class="date">
+                     Sep 2019 - Oct 2019
+                  </em>
+                  <br>
+                  The UCSD Anomaly detection dataset is used in a supervised fashion here. 
+                  A CNN Autoencoder is trained on the constituent frames to learn latent space representations. 
+                  These latent space representations are then passed to a 2-layered LSTM network to detect if a 
+                  sequence of frames contains an anomaly.
+               </p>
+            </div>
+         </div>
 
-               <div class="twelve columns">
+         <div class="row item">
+            <div class="three columns">
+               <img class="blog-pic" src="images/equity-price-movement-prediction.png" alt="equity-price-movement-prediction"/>
+            </div>
+            <div class="nine columns main-col">
+               <p><i class="fa fa-project-diagram"></i>
+                  <a href="https://github.com/yashjakhotiya/Equity-Price-Movement-Prediction-with-Credit-Suisse">
+                     <b style="color:#11ABB0;">Equity Price Movement Prediction using Deep Learning with Credit
+                        Suisse India</b>.
+                  </a>
+                  &bull;
+                  <em class="date">
+                     Feb 2019 - May 2019
+                  </em>
+                  <br>
+                  This project's aim was to predict stock price movements using deep learning. 
+                  It was part of an elective course offered by Credit Suisse India. 
+                  The code is structured into modules which can be reused. 
+                  The core model used was a single-layered LSTM followed by a series of Fully Connected layers. 
+                  On normalized data, an MSE of the order of 10^-3 was achieved.
+               </p>
+            </div>
+         </div>
 
-                  <p><i class="fa fa-project-diagram"></i>
-                     <a
-                        href="https://github.com/yashjakhotiya/Adversarial-Attacks-On-Transformer-Based-Malware-Detector">
-                        <b style="color:#11ABB0;">Adversarial Attacks On Transformer Based Malware Detector</b>.
-                     </a>
-                     A state-of-the-art Transformer-based Malware Detector has been implemented here. 
-                     Additionally, this malware detector's vulnerabilities to adversarial attacks have been explored,
-                      and defenses to these attacks have been suggested.
-                  </p>
+         <div class="row item">
+            <div class="three columns">
+               <img class="blog-pic" src="images/bounding-box-prediction.png" alt="bounding-box-prediction"/>
+            </div>
+            <div class="nine columns main-col">
+               <p><i class="fa fa-project-diagram"></i>
+                  <a href="https://github.com/yashjakhotiya/Flipkart-GRiD-Challenge-2019">
+                     <b style="color:#11ABB0;">Bounding Box Prediction around a Primary Object in an Image using Deep Learning</b>.
+                  </a>
+                  &bull;
+                  <em class="date">
+                     Jan 2019 - Mar 2019
+                  </em>
+                  <br>
+                  This project was a part of 'Flipkart GRiD – Te[a]ch The Machines | 2019' competition. 
+                  An IoU (intersection over union) of 0.8 was achieved here on the unseen test dataset. 
+                  Transfer learning not being allowed, the core network design along with its weights were arrived upon in a novel manner. 
+                  Keras with a Tensorflow backend for training and matplotlib for plotting are used here.
+               </p>
+            </div>
+         </div>
 
-                  <p><i class="fa fa-project-diagram"></i>
-                     <a href="https://github.com/yashjakhotiya/Equity-Price-Movement-Prediction-with-Credit-Suisse">
-                        <b style="color:#11ABB0;">Equity Price Movement Prediction using Deep Learning with Credit
-                           Suisse India</b>.
-                     </a>
-                     This project's aim was to predict stock price movements using deep learning. 
-                     It was part of an elective course offered by Credit Suisse India. 
-                     The code is structured into modules which can be reused. 
-                     The core model used was a single-layered LSTM followed by a series of Fully Connected layers. 
-                     On normalized data, an MSE of the order of 10^-3 was achieved.
-                  </p>
+         <div class="row item">
+            <div class="three columns">
+               <img class="blog-pic" src="images/human-detection.png" alt="human-detection"/>
+            </div>
+            <div class="nine columns main-col">
+               <p><i class="fa fa-project-diagram"></i>
+                  <a href="https://github.com/yashjakhotiya/Human-Detection-In-Live-Video-Stream">
+                     <b style="color:#11ABB0;">Human Detection in a Live Video Stream with HP Enterprises India</b>.
+                  </a>
+                  &bull;
+                  <em class="date">
+                     Sep 2018 - Dec 2018
+                  </em>
+                  <br>
+                  The objective here was to detect humans in a live video stream and to draw bounding boxes around them. 
+                  Faster R-CNN with Inception-v2 pre-trained on the COCO dataset is used here for the task. 
+                  Apart from Tensorflow, OpenCV and matplotlib are also used for various sub-tasks.
+               </p>
+            </div>
+         </div>
 
-                  <p><i class="fa fa-project-diagram"></i>
-                     <a href="https://github.com/yashjakhotiya/Flipkart-GRiD-Challenge-2019">
-                        <b style="color:#11ABB0;">Bounding Box Prediction around a Primary Object in an Image using Deep Learning</b>.
-                     </a>
-                     This project was a part of 'Flipkart GRiD – Te[a]ch The Machines | 2019' competition. 
-                     An IoU (intersection over union) of 0.8 was achieved here on the unseen test dataset. 
-                     Transfer learning not being allowed, the core network design along with its weights were arrived upon in a novel manner. 
-                     Keras with a Tensorflow backend for training and matplotlib for plotting are used here.
-                  </p>
+         <div class="row item">
+            <div class="three columns">
+               <img class="blog-pic" src="images/ctags.png" alt="ctags"/>
+            </div>
+            <div class="nine columns main-col">
+               <p><i class="fa fa-project-diagram"></i>
+                  <a href="https://github.com/shnupta/bric/pulls?q=is%3Apr+author%3Ayashjakhotiya+is%3Aclosed">
+                     <b style="color:#11ABB0;">Support for Ctags in a Small Open Source Editor</b>.
+                  </a>
+                  &bull;
+                  <em class="date">
+                     Sep 2017 - Nov 2017
+                  </em>
+                  <br>
+                  This project's motive has been addition of tags-based code navigation functionality to bric, 
+                  a small open source editor. 
+                  The implementation uses UNIX's Exuberant Ctags generated tags file for navigation. 
+                  Final PR to the editor was merged and the project code now resides in the editor source code. 
+                  Many bugs were removed from and few small functionalities were added to the original source 
+                  code while working on the project.
+               </p>
+            </div>
+         </div>
 
-                  <p><i class="fa fa-project-diagram"></i>
-                     <a href="https://github.com/yashjakhotiya/Human-Detection-In-Live-Video-Stream">
-                        <b style="color:#11ABB0;">Human Detection in a Live Video Stream with HP Enterprises India</b>.
-                     </a>
-                     The objective here was to detect humans in a live video stream and to draw bounding boxes around them. 
-                     Faster R-CNN with Inception-v2 pre-trained on the COCO dataset is used here for the task. 
-                     Apart from Tensorflow, OpenCV and matplotlib are also used for various sub-tasks.
-                  </p>
-
-                  <p><i class="fa fa-project-diagram"></i>
-                     <a href="https://github.com/yashjakhotiya/Human-Detection-In-Live-Video-Stream">
-                        <b style="color:#11ABB0;">Anomaly Detection in a Supervised Way</b>.
-                     </a>
-                     The UCSD Anomaly detection dataset is used in a supervised fashion here. 
-                     A CNN Autoencoder is trained on the constituent frames to learn latent space representations. 
-                     These latent space representations are then passed to a 2-layered LSTM network to detect if a 
-                     sequence of frames contains an anomaly.
-                  </p>
-
-                  <p><i class="fa fa-project-diagram"></i>
-                     <a href="https://www.github.com/shnupta/bric">
-                        <b style="color:#11ABB0;">Support for Ctags in a Small Open Source Editor</b>.
-                     </a>
-                     This project's motive has been addition of tags-based code navigation functionality to bric, 
-                     a small open source editor. 
-                     The implementation uses UNIX's Exuberant Ctags generated tags file for navigation. 
-                     Final PR to the editor was merged and the project code now resides in the editor source code. 
-                     Many bugs were removed from and few small functionalities were added to the original source 
-                     code while working on the project.
-                  </p>
-
-                  <p><i class="fa fa-project-diagram"></i>
-                     <a>
-                        <b style="color:#11ABB0;">Orientation Determination Using a 9-axis IMU</b>.
-                     </a>
-                     The end goal here was accurate determination of roll, pitch and yaw using IMU LSM9DS1. 
-                     The microcontroller used was Atmel's ATSAME70. 
-                     All the 9 axes of the IC were used to prevent drifts in absolute directions arising from building up 
-                     of small errors in each of the 6 accelerometer-gyroscope axes. 
-                     Complementary filters, which are not as accurate as Kalman filters but were sufficient for the project, 
-                     were used to merge the sensor signals.
-                  </p>
-
-               </div> <!-- item end -->
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Education -->
-
+         <div class="row item">
+            <div class="three columns">
+               <img class="blog-pic" src="images/imu.png" alt="imu"/>
+            </div>
+            <div class="nine columns main-col">
+               <p><i class="fa fa-project-diagram"></i>
+                  <a>
+                     <b style="color:#11ABB0;">Orientation Determination Using a 9-axis IMU</b>.
+                  </a>
+                  &bull;
+                  <em class="date">
+                     Mar 2017 - Apr 2017
+                  </em>
+                  <br>
+                  The end goal here was accurate determination of roll, pitch and yaw using IMU LSM9DS1. 
+                  The microcontroller used was Atmel's ATSAME70. 
+                  All the 9 axes of the IC were used to prevent drifts in absolute directions arising from building up 
+                  of small errors in each of the 6 accelerometer-gyroscope axes. 
+                  Complementary filters, which are not as accurate as Kalman filters but were sufficient for the project, 
+                  were used to merge the sensor signals.
+               </p>
+            </div>
+         </div>
+      </div> <!-- End Projects -->
    </section> <!-- Project Section End-->
 
    <!-- footer ================================================== -->
@@ -360,8 +428,6 @@
             <ul class="copyright">
                <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>
             </ul>
-
-
 
          </div>
 

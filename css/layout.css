@@ -258,16 +258,21 @@ ul#nav li.current a { color: #F06000; }
 }
 #blog h3 {
    font: 25px/30px 'opensans-bold', sans-serif;
+   padding-top: 10px;
 }
 
-#blog .containers-pic {
+#blog .blog-pic {
    position: relative;
    width: 230px;
    height: 230px;
-   border-radius: 50%;
+   border-radius: 5%;
 }
 
-#blog .header-col { padding-top: 9px; }
+#blog .header-col { 
+   padding-top: 40px;
+   padding-bottom: 30px;
+   padding-right: 10%; 
+}
 #blog .main-col { padding-right: 10%; }
 
 .post{
