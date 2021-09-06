@@ -239,8 +239,10 @@ ul#nav li.current a { color: #F06000; }
 
 #blog {
    background: #fff;
-   padding-top: 66px;
+   padding-top: 00px;
    padding-bottom: 00px;
+   padding-left: 30px;
+   padding-right: 30px;
    overflow: hidden;
 }
 
@@ -298,8 +300,10 @@ ul#nav li.current a { color: #F06000; }
 
 #projects {
    background: #fff;
-   padding-top: 60px;
+   padding-top: 00px;
    padding-bottom: 00px;
+   padding-left: 30px;
+   padding-right: 30px;
    overflow: hidden;
 }
 
