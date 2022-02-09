@@ -13,6 +13,7 @@
    e. News Section
    e. Portfolio Section //remove
    f. Blog Section
+   g. Papers section
    f. Call To Action Section //remove
    g. Testimonials Section
    h. Contact Section
@@ -290,6 +291,67 @@ ul#nav li.current a { color: #F06000; }
    margin-left: 5px;
 }
 #blog .date {
+   font: 15px/24px 'opensans-regular', sans-serif;
+   margin-top: 6px;
+}
+
+/* ------------------------------------------------------------------ */
+/* f. Papers Section
+/* ------------------------------------------------------------------ */
+
+#papers {
+   background: #fff;
+   padding-top: 00px;
+   padding-bottom: 00px;
+   padding-left: 30px;
+   padding-right: 30px;
+   overflow: hidden;
+}
+
+#papers a, #papers a:visited  { color: #11ABB0; }
+#papers a:hover, #papers a:focus { color: #313131; }
+
+#papers h1 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+#papers h1 span {
+   border-bottom: 3px solid #11ABB0;
+   padding-bottom: 6px;
+}
+#papers h3 {
+   font: 25px/30px 'opensans-bold', sans-serif;
+   padding-top: 10px;
+}
+
+#papers .header-col { 
+   padding-top: 40px;
+   padding-bottom: 30px;
+   padding-right: 10%; 
+}
+#papers .main-col { padding-right: 10%; }
+
+#papers .main-row {
+   padding-bottom: 30px;
+}
+
+.post{
+   margin-bottom: 00px;
+   padding-bottom: 36px;
+   border-bottom: 1px solid #E8E8E8;
+}
+#papers .info {
+   font: 16px/24px 'librebaskerville-italic', serif;
+   color: #6E7881;
+   margin-bottom: 18px;
+   margin-top: 9px;
+}
+#papers .info span {
+   margin-right: 5px;
+   margin-left: 5px;
+}
+#papers .date {
    font: 15px/24px 'opensans-regular', sans-serif;
    margin-top: 6px;
 }
