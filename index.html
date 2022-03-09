@@ -379,7 +379,9 @@
                   In an online QnA platform like Edstem, Piazza, Stack Overflow or Quora, 
                   multiple questions with the same intent leads to redundancy, and waste of time, space and resources.
                   We train a two stage model to identify if an incoming question is similar to an already asked one - 
-                  a BERT Siamese Network, and a clustering algorithm for efficient inference.
+                  a BERT Siamese Network, and PCA followed by a clustering algorithm for efficient inference. 
+                  Our tuned classification accuracy is 86%. PCA reduces number of principal components to 15 with 99% variance retained.
+                  Finally, an elbow-determined 100 clusters help reduce our time overhead 100 times.
                </p>
             </div>
          </div>
@@ -392,14 +394,14 @@
                <p><i class="fa fa-project-diagram"></i>
                   <a target="_blank" rel="noopener noreferrer"
                      href="https://github.com/Sri-vatsa/Disentanglement-in-discriminative-models">
-                     <b style="color:#11ABB0;">Can enforcing disentanglement in representation space lead to more generalizable and transferable discriminative models?</b>.
+                     <b style="color:#11ABB0;">Exploring Disentanglement in Discriminative Modeling</b>.
                   </a>
                   &bull;
                   <em class="date">
                      Oct 2021 - Dec 2021
                   </em>
                   <br>
-                  This project explores effect of representation space disentanglement in discriminative vision models.
+                  Can enforcing disentanglement in vision representation space lead to more generalizable and transferable discriminative models?
                   We enforce disentanglement by introducing a novel KSG mutual information based regularizer.
                   To measure disentanglement, we also contribute the first open-source implementation of Unsigned Correlation Coefficient (Wang et al. 2020).
                   Experiments on CIFAR-10 showed improvement in classification accuracy by ~4% after disentanglement, which we then validated with GradCam and Activation Grid outputs.
@@ -422,9 +424,10 @@
                      Sep 2019 - May 2020
                   </em>
                   <br>
-                  A state-of-the-art Transformer-based Malware Detector has been implemented here. 
-                  Additionally, this malware detector's vulnerabilities to adversarial attacks have been explored,
-                     and defenses to these attacks have been suggested.
+                  Machine learning-based malware detectors have become a promising alternative to detect a wide variety of malware where Signature-based models fail. 
+                  However, due to the inherent nature of machine learning models, such detectors are susceptible adversarial attacks - attacks that work by generating intentionally designed inputs that can force these models to misclassify.
+                  We implement I-MAD: A Novel Interpretable Malware Detector with a Transformer backbone and adversarially perturb its input using fast gradient sign method, achieving a misclassification rate of 23.9%.
+                  Additionally, we suggest defenses to these attacks resulting in a 50% reduction in misclassification with adversarial training.
                </p>
             </div>
          </div>
