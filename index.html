@@ -350,16 +350,13 @@
                   </a>
                   &bull;
                   <em class="date">
-                     Oct 2020 - 
+                     Oct 2021 - Jan 2022
                   </em>
                   <br>
                   Large Language Models have been successful in a wide variety of Natural Language Processing tasks by capturing the compositionality of the text representations. 
-                  In spite of their great success, these vector representations fail to capture meaning of idiomatic multi-word expressions (MWEs). 
-                  In this paper, we focus on the detection of idiomatic expressions by using binary classification. 
-                  We use a dataset consisting of the literal and idiomatic usage of MWEs in English and Portuguese. 
-                  Thereafter, we perform the classification in two different settings: zero shot and one shot, to determine if a given sentence contains an idiom or not. 
-                  N shot classification for this task is defined by N number of common idioms between the training and testing sets. 
-                  In this paper, we train multiple Large Language Models in both the settings and achieve an F1 score (macro) of 0.73 for the zero shot setting and an F1 score (macro) of 0.85 for the one shot setting.
+                  However, these vector representations fail to capture meaning of idiomatic multi-word expressions (MWEs). 
+                  In this paper, we focus on the detection of contextual idiomatic expressions using a dataset consisting of the literal and idiomatic usage of MWEs in English and Portuguese 
+                  in zero shot and one shot settings. We achieve an F1 score (macro) of 0.73 for the zero shot setting and 0.85 for the one shot setting.
                </p>
             </div>
          </div>
@@ -376,13 +373,36 @@
                   </a>
                   &bull;
                   <em class="date">
-                     Oct 2020 - Dec 2020
+                     Oct 2021 - Dec 2021
                   </em>
                   <br>
                   In an online QnA platform like Edstem, Piazza, Stack Overflow or Quora, 
                   multiple questions with the same intent leads to redundancy, and waste of time, space and resources.
                   We train a two stage model to identify if an incoming question is similar to an already asked one - 
                   a BERT Siamese Network, and a clustering algorithm for efficient inference.
+               </p>
+            </div>
+         </div>
+
+         <div class="row item main-row">
+            <div class="three columns">
+               <img src="/images/disentanglement.png" alt="disentanglement-cat"/>
+            </div>
+            <div class="nine columns main-col">
+               <p><i class="fa fa-project-diagram"></i>
+                  <a target="_blank" rel="noopener noreferrer"
+                     href="https://github.com/Sri-vatsa/Disentanglement-in-discriminative-models">
+                     <b style="color:#11ABB0;">Can enforcing disentanglement in representation space lead to more generalizable and transferable discriminative models?</b>.
+                  </a>
+                  &bull;
+                  <em class="date">
+                     Oct 2021 - Dec 2021
+                  </em>
+                  <br>
+                  This project explores effect of representation space disentanglement in discriminative vision models.
+                  We enforce disentanglement by introducing a novel KSG mutual information based regularizer.
+                  To measure disentanglement, we also contribute the first open-source implementation of Unsigned Correlation Coefficient (Wang et al. 2020).
+                  Experiments on CIFAR-10 showed improvement in classification accuracy by ~4% after disentanglement, which we then validated with GradCam and Activation Grid outputs.
                </p>
             </div>
          </div>
