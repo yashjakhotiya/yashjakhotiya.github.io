@@ -217,7 +217,7 @@ ul#nav li.current a { color: #F06000; }
 #about .contact-details { width: 39.66667%; }
 #about .education-details { width: 60%; }
 #about .download {
-   width: 58.33333%;
+   width: 100%;
    padding-top: 6px;
 }
 #about .main-col { padding-right: 5%; }

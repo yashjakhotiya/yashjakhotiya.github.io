@@ -56,7 +56,7 @@
    }
    #about .contact-details { width: 50%; }
    #about .education-details { width: 50%; }
-   #about .download { width: 50%; }
+   #about .download { width: 100%; }
 
    /* Resume Section
    ------------------------------------------------------------------- */
