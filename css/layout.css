@@ -10,13 +10,8 @@
    b. Header Styles
    c. About Section
    d. Projects Section
-   e. News Section
-   e. Portfolio Section //remove
    f. Blog Section
    g. Papers section
-   f. Call To Action Section //remove
-   g. Testimonials Section
-   h. Contact Section
    i. Footer
 
 ===================================================================== */
@@ -265,8 +260,8 @@ ul#nav li.current a { color: #F06000; }
 }
 
 #blog .header-col { 
-   padding-top: 40px;
-   padding-bottom: 30px;
+   padding-top: 20px;
+   padding-bottom: 20px;
    padding-right: 10%; 
 }
 #blog .main-col { padding-right: 10%; }
@@ -277,7 +272,7 @@ ul#nav li.current a { color: #F06000; }
 
 .post{
    margin-bottom: 00px;
-   padding-bottom: 36px;
+   padding-bottom: 00px;
    border-bottom: 1px solid #E8E8E8;
 }
 #blog .info {
@@ -326,8 +321,8 @@ ul#nav li.current a { color: #F06000; }
 }
 
 #papers .header-col { 
-   padding-top: 40px;
-   padding-bottom: 30px;
+   padding-top: 20px;
+   padding-bottom: 20px;
    padding-right: 10%; 
 }
 #papers .main-col { padding-right: 10%; }
@@ -338,7 +333,7 @@ ul#nav li.current a { color: #F06000; }
 
 .post{
    margin-bottom: 00px;
-   padding-bottom: 36px;
+   padding-bottom: 00px;
    border-bottom: 1px solid #E8E8E8;
 }
 #papers .info {
@@ -386,19 +381,19 @@ ul#nav li.current a { color: #F06000; }
 }
 
 #projects .header-col { 
-   padding-top: 40px;
-   padding-bottom: 30px;
+   padding-top: 20px;
+   padding-bottom: 20px;
    padding-right: 10%; 
 }
 #projects .main-col { padding-right: 10%; }
 
 #projects .main-row {
-   padding-bottom: 30px;
+   padding-bottom: 0px;
 }
 
 .single_project {
    margin-bottom: 48px;
-   padding-bottom: 24px;
+   padding-bottom: 0px;
    border-bottom: 1px solid #E8E8E8;
 }
 #projects .info {
