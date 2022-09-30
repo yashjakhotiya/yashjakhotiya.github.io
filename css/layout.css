@@ -329,7 +329,7 @@ ul#nav li.current a { color: #F06000; }
 #papers .main-col { padding-right: 10%; }
 
 #papers .main-row {
-   padding-bottom: 30px;
+   padding-bottom: 0px;
 }
 
 .post{
