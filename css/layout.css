@@ -252,7 +252,7 @@ ul#nav li.current a { color: #F06000; }
 }
 #blog h1 span {
    border-bottom: 3px solid #11ABB0;
-   padding-bottom: 6px;
+   padding-bottom: 0px;
 }
 #blog h3 {
    font: 25px/30px 'opensans-bold', sans-serif;
@@ -313,7 +313,7 @@ ul#nav li.current a { color: #F06000; }
 }
 #papers h1 span {
    border-bottom: 3px solid #11ABB0;
-   padding-bottom: 6px;
+   padding-bottom: 0px;
 }
 #papers h3 {
    font: 25px/30px 'opensans-bold', sans-serif;
@@ -324,6 +324,7 @@ ul#nav li.current a { color: #F06000; }
    padding-top: 20px;
    padding-bottom: 20px;
    padding-right: 10%; 
+   width: 100%;
 }
 #papers .main-col { padding-right: 10%; }
 
@@ -337,10 +338,10 @@ ul#nav li.current a { color: #F06000; }
    border-bottom: 1px solid #E8E8E8;
 }
 #papers .info {
-   font: 16px/24px 'librebaskerville-italic', serif;
-   color: #6E7881;
-   margin-bottom: 18px;
-   margin-top: 9px;
+   font: 16px/24px 'calibri', serif;
+   color: #F06000;
+   margin-bottom: 2px;
+   margin-top: 0px;
 }
 #papers .info span {
    margin-right: 5px;

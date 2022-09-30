@@ -83,7 +83,7 @@
             <li class="current"><a target="_blank" rel="noopener noreferrer" class="smoothscroll" href="#home">Home</a></li>
             <li><a target="_blank" rel="noopener noreferrer" class="smoothscroll" href="#about">About</a></li>
             <li><a target="_blank" rel="noopener noreferrer" class="smoothscroll" href="#blog">Blog</a></li>
-            <!-- <li><a target="_blank" rel="noopener noreferrer" class="smoothscroll" href="#papers">Preprints and Reports</a></li> -->
+            <li><a target="_blank" rel="noopener noreferrer" class="smoothscroll" href="#papers">Research Publications</a></li>
             <li><a target="_blank" rel="noopener noreferrer" class="smoothscroll" href="#projects">Projects</a></li>
          </ul> <!-- end #nav -->
 
@@ -292,7 +292,37 @@
       <div class="row post">
          <div class="row item">
             <div class="three columns header-col">
-               <h1><span>Research Papers</span></h1>
+               <h1><span>Research Publications</span></h1>
+            </div>
+         </div>
+
+         <div class="row item main-row">
+            <div class="three columns">
+               <img src="images/assistive-robotics.png" alt="assistive-robotics"/>
+            </div>
+            <div class="nine columns main-col">
+               <h4><i class="fa fa-project-diagram"></i>
+                  <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2209.02160">
+                     Improving Assistive Robotics with Deep Reinforcement Learning
+                  </a>
+               </h4>
+               <p class="info">
+                  <b><a href="https://sites.google.com/view/deep-rl-workshop-neurips-2022/home" style="color: #F06000">NeurIPS '22, Workshop on Deep Reinforcement Learning*</a></b>
+               </p>
+               <p>
+                  <span>&bull;</span><b>Yash Jakhotiya</b>, Iman Haque<br>
+                  Assistive Robotics is a class of robotics concerned with aiding humans in daily care tasks 
+                  that they may be inhibited from doing due to disabilities or age. While research has demonstrated 
+                  that classical control methods can be used to design policies to complete these tasks, these 
+                  methods can be difficult to generalize to a variety of instantiations of a task. Reinforcement 
+                  learning can provide a solution to this issue, wherein robots are trained in simulation and their 
+                  policies are transferred to real-world machines. In this work, we replicate a published baseline 
+                  for training robots on three tasks in the Assistive Gym environment, and we explore the usage of a 
+                  Recurrent Neural Network policy and Phasic Policy Gradient learning to augment the original work. 
+                  Our baseline implementation meets or exceeds the baseline of the original work, however, we found 
+                  that our explorations into the new methods was not as effective as we anticipated. We discuss the 
+                  results of our baseline and analyze why our new methods were not as successful.
+               </p>
             </div>
          </div>
 
@@ -301,22 +331,60 @@
                <img src="images/transformer-malware-detector.png" alt="transformer-malware-detector"/>
             </div>
             <div class="nine columns main-col">
-               <p class="info">
-                  Undergraduate Project Report
-               </p>
                <h4><i class="fa fa-project-diagram"></i>
-                  <a target="_blank" rel="noopener noreferrer" href="https://github.com/yashjakhotiya/Adversarial-Attacks-On-Transformers/blob/master/README.pdf">
-                     Adversarial Attacks On Transformers-Based Malware Detector
+                  <a target="_blank" rel="noopener noreferrer" href="https://github.com/yashjakhotiya/Adversarial-Attacks-On-Transformers/blob/master/README.pdf" style="color: #F06000">
+                     Adversarial Attacks On Transformers-Based Malware Detectors
                   </a>
                </h4>
+               <p class="info">
+                  <b><a href="https://tsrml2022.github.io/cfp">NeurIPS '22, Workshop on Trustworthy and Socially Responsible Machine Learning*</a></b>
+               </p>
                <p>
-                  <span>&bull;</span> <b>Yash Jakhotiya*</b> Heramb Patil* Jugal Rawlani*<br>
-                  Implemented a state-of-the-art Transformer-based Malware Detector,
-                   showed its vulnerabilities to adversarial attacks,
-                   and suggested defenses to prevent such attacks.
+                  <span>&bull;</span><b>Yash Jakhotiya</b>, Heramb Patil, Jugal Rawlani<br>
+                  Signature-based malware detectors have proven to be insufficient as even a small change 
+                  in malignant executable code can bypass these signature-based detectors. Many machine 
+                  learning-based models have been proposed to efficiently detect a wide variety of malware. 
+                  Many of these models are found to be susceptible to adversarial attacks - attacks that 
+                  work by generating intentionally designed inputs that can force these models to misclassify. 
+                  Our work aims to explore vulnerabilities in the current state of the art malware detectors 
+                  to adversarial attacks. We train a Transformers-based malware detector, carry out adversarial 
+                  attacks resulting in a misclassification rate of 23.9% and propose defenses that reduce 
+                  this misclassification rate to half. An implementation of our work can be found at  
+                  <a href="https://github.com/yashjakhotiya/Adversarial-Attacks-On-Transformers">this https url</a>.
                </p>
             </div>
          </div>
+
+         <div class="row item main-row">
+            <div class="three columns">
+               <img src="/images/relation_network.png" alt="relation_network"/>
+            </div>
+            <div class="nine columns main-col">
+               <h4><i class="fa fa-project-diagram"></i>
+                  <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2202.02394">
+                     It Takes One to Know One? Idiomaticity Detection using Zero and One Shot Learning
+                  </a>
+               </h4>
+               <p class="info">
+                  <b><a href="https://semeval.github.io/SemEval2022/" style="color: #F06000">NAACL '22, The 16th International Workshop on Semantic Evaluation</a></b>
+               </p>
+               <p>
+                  <span>&bull;</span><b>Yash Jakhotiya*</b>, Vaibhav Kumar*, Ashwin Pathak*, Raj Shah*<br>
+                  Large Language Models have been successful in a wide variety of Natural Language Processing tasks by 
+                  capturing the compositionality of the text representations. In spite of their great success, these 
+                  vector representations fail to capture meaning of idiomatic multi-word expressions (MWEs). 
+                  In this paper, we focus on the detection of idiomatic expressions by using binary classification. 
+                  We use a dataset consisting of the literal and idiomatic usage of MWEs in English and Portuguese. 
+                  Thereafter, we perform the classification in two different settings: zero shot and one shot, to determine 
+                  if a given sentence contains an idiom or not. N shot classification for this task is defined by N 
+                  number of common idioms between the training and testing sets. In this paper, we train multiple Large 
+                  Language Models in both the settings and achieve an F1 score (macro) of 0.73 for the zero shot setting 
+                  and an F1 score (macro) of 0.85 for the one shot setting. An implementation of our work can be found at 
+                  <a href="https://github.com/ashwinpathak20/Idiomaticity_Detection_Using_Few_Shot_Learning">this https URL.</a>
+               </p>
+            </div>
+         </div>
+         <p><i>*under submission</i></p>
       </div> <!-- row post end -->
    </section> <!-- Papers Section End -->
 
@@ -331,29 +399,6 @@
          <div class="row item">
             <div class="three columns header-col">
                <h1><span>Projects</span></h1>
-            </div>
-         </div>
-
-         <div class="row item main-row">
-            <div class="three columns">
-               <img src="/images/relation_network.png" alt="relation_network"/>
-            </div>
-            <div class="nine columns main-col">
-               <p><i class="fa fa-project-diagram"></i>
-                  <a target="_blank" rel="noopener noreferrer"
-                     href="https://arxiv.org/abs/2202.02394">
-                     <b style="color:#11ABB0;">It Takes One to Know One? Idiomaticity Detection using Zero and One Shot Learning</b>.
-                  </a>
-                  &bull;
-                  <em class="date">
-                     Oct 2021 - Jan 2022
-                  </em>
-                  <br>
-                  Large Language Models have been successful in a wide variety of Natural Language Processing tasks by capturing the compositionality of the text representations. 
-                  However, these vector representations fail to capture meaning of idiomatic multi-word expressions (MWEs). 
-                  In this paper, we focus on the detection of contextual idiomatic expressions using a dataset consisting of the literal and idiomatic usage of MWEs in English and Portuguese 
-                  in zero shot and one shot settings. We achieve an F1 score (macro) of 0.73 for the zero shot setting and 0.85 for the one shot setting.
-               </p>
             </div>
          </div>
 
@@ -401,29 +446,6 @@
                   We enforce disentanglement by introducing a novel KSG mutual information based regularizer.
                   To measure disentanglement, we also contribute the first open-source implementation of Unsigned Correlation Coefficient (Wang et al. 2020).
                   Experiments on CIFAR-10 showed improvement in classification accuracy by ~4% after disentanglement, which we then validated with GradCam and Activation Grid outputs.
-               </p>
-            </div>
-         </div>
-
-         <div class="row item main-row">
-            <div class="three columns">
-               <img src="images/transformer-malware-detector.png" alt="transformer-malware-detector"/>
-            </div>
-            <div class="nine columns main-col">
-               <p><i class="fa fa-project-diagram"></i>
-                  <a target="_blank" rel="noopener noreferrer"
-                     href="https://github.com/yashjakhotiya/Adversarial-Attacks-On-Transformers/blob/master/README.pdf">
-                     <b style="color:#11ABB0;">Adversarial Attacks On Transformers-Based Malware Detector</b>.
-                  </a>
-                  &bull;
-                  <em class="date">
-                     Sep 2019 - May 2020
-                  </em>
-                  <br>
-                  Machine learning-based malware detectors have become a promising alternative to detect a wide variety of malware where Signature-based models fail. 
-                  However, due to the inherent nature of machine learning models, such detectors are susceptible adversarial attacks - attacks that work by generating intentionally designed inputs that can force these models to misclassify.
-                  We implement I-MAD: A Novel Interpretable Malware Detector with a Transformer backbone and adversarially perturb its input using fast gradient sign method, achieving a misclassification rate of 23.9%.
-                  Additionally, we suggest defenses to these attacks resulting in a 50% reduction in misclassification with adversarial training.
                </p>
             </div>
          </div>
