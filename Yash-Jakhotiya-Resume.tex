@@ -6,9 +6,7 @@
 % --- packages ---
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage{lmodern}
-\usepackage{helvet}
-\renewcommand{\familydefault}{\sfdefault}
+\usepackage[default]{lato}
 \usepackage[margin=0.45in,top=0.45in,bottom=0.45in]{geometry}
 \pagestyle{empty}
 \usepackage{xcolor}
@@ -67,14 +65,14 @@
 % Row 1: BOLD CAPS company  +  small caps location (the "block" layer)
 % Row 2: italic Title Case role  +  italic dates  (the lighter layer)
 \newcommand{\entry}[4]{%
-  \vspace{3pt}\par
+  \vspace{3.5pt}\par
   \noindent\textbf{\MakeUppercase{#1}}\hfill{\small\color{inksoft}\MakeUppercase{#2}}\par
   \noindent{\small\itshape #3}\hfill{\small\itshape\color{inksoft} #4}\par
 }
 
 % Company header without role (use with one or more \rolerow{}{} after).
 \newcommand{\entryhead}[2]{%
-  \vspace{3pt}\par
+  \vspace{3.5pt}\par
   \noindent\textbf{\MakeUppercase{#1}}\hfill{\small\color{inksoft}\MakeUppercase{#2}}\par
 }
 \newcommand{\rolerow}[2]{%
