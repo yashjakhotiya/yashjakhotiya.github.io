@@ -1,0 +1,170 @@
+% Yash Jakhotiya - Resume (generic / master)
+% Compile: tectonic resume.tex
+
+\documentclass[letterpaper,9pt]{extarticle}
+
+% --- packages ---
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[margin=0.45in,top=0.45in,bottom=0.45in]{geometry}
+\pagestyle{empty}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+
+% --- tokens ---
+\definecolor{ink}{HTML}{111111}
+\definecolor{inksoft}{HTML}{555555}
+\definecolor{linkblue}{HTML}{0F62D5}
+\definecolor{rule}{HTML}{222222}
+\color{ink}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=linkblue,
+  linkcolor=linkblue,
+}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\renewcommand{\baselinestretch}{1.0}
+
+% --- section heading: minimal academic — bold caps + hrulefill on same line ---
+\renewcommand{\section}[1]{%
+  \vspace{4pt}\par%
+  \noindent{\normalfont\bfseries\color{ink}\MakeUppercase{#1}}~\hrulefill\par%
+}
+
+% --- list style: minimal ---
+\setlist[itemize]{
+  leftmargin=11pt,
+  topsep=1pt,
+  itemsep=0.5pt,
+  parsep=0pt,
+  partopsep=0pt,
+  label={\textbullet}
+}
+
+% --- entry commands ---
+\newcommand{\headerblock}{%
+  {\fontsize{22pt}{26pt}\selectfont YASH \textbf{JAKHOTIYA}}\par
+  \vspace{3pt}
+  {\small\color{inksoft}%
+    New York, NY \enspace\textperiodcentered\enspace
+    \href{mailto:mailsforyashj@gmail.com}{mailsforyashj@gmail.com} \enspace\textperiodcentered\enspace
+    \href{https://yashjakhotiya.github.io/}{yashjakhotiya.github.io} \enspace\textperiodcentered\enspace
+    \href{https://www.linkedin.com/in/yash-jakhotiya}{linkedin.com/in/yash-jakhotiya}%
+  }\par
+  \vspace{4pt}
+  {\color{rule}\hrule height 0.7pt}
+}
+
+% Single role under company.  \entry{company}{location}{role}{dates}
+% Row 1: BOLD CAPS company  +  small caps location (the "block" layer)
+% Row 2: italic Title Case role  +  italic dates  (the lighter layer)
+\newcommand{\entry}[4]{%
+  \vspace{3pt}\par
+  \noindent\textbf{\MakeUppercase{#1}}\hfill{\small\color{inksoft}\MakeUppercase{#2}}\par
+  \noindent{\small\itshape #3}\hfill{\small\itshape\color{inksoft} #4}\par
+}
+
+% Company header without role (use with one or more \rolerow{}{} after).
+\newcommand{\entryhead}[2]{%
+  \vspace{3pt}\par
+  \noindent\textbf{\MakeUppercase{#1}}\hfill{\small\color{inksoft}\MakeUppercase{#2}}\par
+}
+\newcommand{\rolerow}[2]{%
+  \noindent{\small\itshape #1}\hfill{\small\itshape\color{inksoft} #2}\par
+}
+
+% --- document ---
+\begin{document}
+
+\headerblock
+
+\vspace{6pt}
+{\small
+Backend ML engineer at \textbf{Palantir} working across \textbf{customer-embedded} agentic AI on the frontline, Foundry \textbf{product engineering} throughout the platform, and the \textbf{model-serving infrastructure} underneath. Ex-Amazon Applied Science, D.E. Shaw. \textbf{Georgia Tech MS-CS, ML}; LLM-editing thesis.
+}
+
+\section{Experience}
+
+\entry{Palantir}{New York}{Machine Learning Engineer, Backend}{July 2023 - Present}
+\begin{itemize}
+  \item FDE rotation at \textbf{Panasonic Energy of North America}'s Nevada Gigafactory. Shipped \href{https://www.youtube.com/watch?v=nUlnb1N6H9E}{Ask Atom}, an AIP copilot that mines \textbf{1M+} maintenance tickets of tribal knowledge and loops new fixes back. Cut machinery downtime \href{https://twitter.com/DailyPalantir/status/1765441213316964713}{75\%}; anchored a 3-year \textbf{\$60M} expansion.
+  \item Productized identified gaps in Palantir Foundry with new \href{https://www.palantir.com/docs/foundry/pipeline-builder/overview/}{Pipeline Builder} nodes. \href{https://www.palantir.com/docs/foundry/announcements/2024-04/\#pipeline-builder-now-supports-running-llms-in-your-pipeline-at-scale}{``Use LLM''} and \href{https://www.palantir.com/docs/foundry/announcements/2023-12/\#text-to-embeddings-board-in-pipeline-builder}{``Text-to-Embeddings''} now serve \textbf{250+ organizations}, \textbf{11B+ tokens} and \textbf{52M+ embeddings} monthly.
+  \item Returned to the frontline with \textbf{audio-to-audio} workflows for a hospital and a telecom client, converting to another eight-figure contract and seeding an \href{https://www.youtube.com/watch?v=jcspHs5etT4}{ElevenLabs partnership}. Back on backend, sped up Foundry \href{https://www.palantir.com/docs/foundry/media-sets-advanced-formats/add-audio-transcription}{audio transcription} \textbf{6--7$\times$} with diarization support.
+  \item In the process, \textbf{bootstrapped} Palantir's new \textbf{Rust + PyO3 in-house model-inference} service responding at \textbf{34-45 ms} per query.
+  \item Branched off to using that to \href{https://www.palantir.com/docs/foundry/ai-fde/overview/}{enable \textbf{agentic loops}} by supporting hybrid OCR, layout-aware and VLM \href{https://www.palantir.com/docs/foundry/document-intelligence/overview}{\textbf{doc extraction}}. 
+  \item Extended into \textbf{agentic image search} by introducing and threading image embeddings through Foundry's indexing and retrieval services.
+  \item Now, \textbf{integrating live media streaming} in Foundry. Byte-level streaming media is becoming a first-class primitive supporting ingest, storage, playback and out-of-the-box transformations in low-latency pipelines.
+\end{itemize}
+
+\entry{Amazon}{Palo Alto}{Applied Scientist Intern}{May 2022 - August 2022}
+\begin{itemize}
+  \item Worked with the \href{https://www.amazon.com/visual-search/}{Visual Search and Augmented Reality} team on customer query-to-catalog image retrieval.
+  \item Improved Amazon's \href{https://www.amazon.com/stylesnap/}{Shop-the-Look} recall@10 by \textbf{24\%} using high-attention patches in large-scale vision \textbf{transformers}.
+\end{itemize}
+
+\entryhead{D.E. Shaw}{Hyderabad}
+\rolerow{Member Technical, Quant Systems}{July 2020 - July 2021}
+\rolerow{Summer Intern}{May 2019 - July 2019}
+\begin{itemize}
+  \item Developed \textbf{RBAC} and config validation for the \textbf{Elastic} stack and authored OCI images for \textbf{Kubernetes}, managing \textbf{3000+} Linux hosts.
+  \item As an intern, automated infrastructural alert assignments using \textbf{NLP}, cutting the team's workload \textbf{86\%}.
+\end{itemize}
+
+\entry{Kubeflow, Google Cloud}{Remote}{Google Summer of Code Student}{June 2020 - August 2020}
+\begin{itemize}
+  \item Deployed efficient \textbf{MLOps} workflows using all six components of Kubeflow in ML pipeline \href{https://yashjakhotiya.github.io/blog/open-source/mlops/2020/08/23/gsoc-kubeflow.html}{notebooks} for two NLP tasks.
+\end{itemize}
+
+\entry{Indian Institute of Science}{Bangalore}{Summer Research Intern}{May 2018 - July 2018}
+\begin{itemize}
+  \item Modeled \href{https://drive.google.com/file/d/1UTi_qSNzzFxerfY2AEwRXlXdQhOi9tdS/view?usp=sharing}{human dance sequences} at IISc's \href{https://val.cds.iisc.ac.in/index.html}{Vision and AI Lab} using \textbf{RNNs} and \textbf{GANs} with \textbf{<0.1} normalized L2 reconstruction loss.
+\end{itemize}
+
+\section{Education}
+
+\entry{Georgia Institute of Technology}{Atlanta}{MS, Computer Science \enspace\textperiodcentered\enspace GPA 4.0/4.0}{August 2021 - May 2023}
+\begin{itemize}
+  \item Concentration in \textbf{Machine Learning}. Research with \href{https://faculty.cc.gatech.edu/~zk15/group/}{Prof. Zsolt Kira} on continual learning, novel category discovery and large language model editing. MS thesis: \emph{Scalable Large Language Model Editing}.
+\end{itemize}
+
+\entryhead{College of Engineering, Pune}{}
+\rolerow{B. Tech, Computer Engineering \enspace\textperiodcentered\enspace GPA 9.2/10}{August 2016 - May 2020}
+\begin{itemize}
+  \item Minor in \textbf{Financial Engineering}. Represented the college thrice in \href{https://icpc.global/ICPCID/TUJMT3KF9AFV}{ACM ICPC} regionals.
+\end{itemize}
+
+\section{Publications}
+\begin{itemize}
+  \item \href{https://arxiv.org/abs/2209.02160}{\emph{Improving Assistive Robotics with Deep Reinforcement Learning}}. NeurIPS 2022 Deep RL workshop.
+  \item \href{https://arxiv.org/abs/2210.00008}{\emph{Adversarial Attacks on Transformers-Based Malware Detectors}}. NeurIPS 2022 \textbf{Machine Learning Safety} workshop.
+  \item \href{https://arxiv.org/abs/2202.02394}{\emph{It Takes One to Know One? Idiomaticity Detection using Zero and One-shot Learning}}. NAACL 2022 SemEval workshop.
+\end{itemize}
+
+\section{Selected Projects}
+\begin{itemize}
+  \item \href{https://csat-web.web.app}{COEP's 2nd Student Satellite Initiative}. Wrote a \textbf{BCH} error-correction module to counter space-radiation bit flips.
+  \item \textbf{Mutual Information Regularization}. \href{https://github.com/Sri-vatsa/Disentanglement-in-discriminative-models}{Contributed} the first-known \textbf{PyTorch} implementation of the \textbf{KSG} MI estimator.
+  \item \textbf{Open-source editor}. Extended \href{https://github.com/shnupta/bric/pulls?q=is\%3Apr+author\%3Ayashjakhotiya+is\%3Aclosed}{shnupta/bric}, an open-source code editor, with UNIX's \textbf{Exuberant Ctags}-based code navigation.
+\end{itemize}
+
+\section{Leadership}
+\begin{itemize}
+  \item Founded the \href{https://www.instagram.com/coep_asci/}{Association of Students of CE and IT, COEP}. A platform for technical dialogue; organized talks, contests and tutorials mentoring younger students on competitive coding and open-source software.
+\end{itemize}
+
+\section{Technical Skills}
+\begin{itemize}
+  \item \textbf{Languages}: Java, Rust, Python, Go, Scala, SQL, Linux shell, C/C++
+  \item \textbf{ML / AI}: PyTorch, JAX, HuggingFace, PyO3, Transformers; model serving; RAG with chunking, embedding, reranking, query expansion, evals; agents, harnesses and tool use; prompt engineering 
+  \item \textbf{Backend \& Infra}: Undertow, Jersey, Conjure, Django; Spark, Flink, Kafka, Elasticsearch; Kubernetes, Docker, AWS, GCP, Palantir Apollo, Prometheus, Grafana, Git
+\end{itemize}
+
+\end{document}
